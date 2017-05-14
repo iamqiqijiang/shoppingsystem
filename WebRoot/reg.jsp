@@ -58,7 +58,9 @@
 	   		详细地址：<textarea type="text" name="address" rows="3"></textarea><font color="red">*</font>
 	   	</div>
 	   	<div id="shop" class="shop" align="center">
-	   	店铺名：<input type="text" name="shopname" autocomplete="off"><font color="red">*</font><br/>
+	   	店铺名：&#8195;<input type="text" name="shopname" autocomplete="off"><font color="red">*</font><br/>
+	   	店主姓名：<input type="text" name="name" autocomplete="off"><font color="red">*</font><br/>
+	   	身份证号：<input type="text" name="id" autocomplete="off"><font color="red">*</font><br/>
 	   	请仔细阅读诚信经营承诺书！<font color="red">*</font><br/>
 	   	<input type="radio" name="agree" valeu="同意">同意<input type="radio" name="agree" valeu="不同意" onclick="agree()">不同意<br/>
 	  </div>

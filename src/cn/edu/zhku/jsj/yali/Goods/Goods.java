@@ -1,6 +1,5 @@
 package cn.edu.zhku.jsj.yali.Goods;
 
-import cn.edu.zhku.jsj.yali.Goods.Dao.GoodFoundDao;
 
 public class Goods {
 	private String goodname;           //商品名

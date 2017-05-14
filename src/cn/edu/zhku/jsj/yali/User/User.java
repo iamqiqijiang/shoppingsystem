@@ -10,8 +10,15 @@ public class User {
 	private String address;
 	private String cate;
 	private String shopname;
+	private String id;
 	
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getCate() {
 		return cate;
 	}

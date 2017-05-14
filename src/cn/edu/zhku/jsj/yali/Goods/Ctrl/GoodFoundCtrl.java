@@ -27,9 +27,6 @@ public class GoodFoundCtrl extends HttpServlet {
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/*System.out.println(DateUtils.getDefaultDate() + " : currentPage = "
-				+ req.getParameter("currentPage") + ",pageSize="
-				+ req.getParameter("pageSize"));*/
 		PageBean<Goods> pageBean = new PageBean<Goods>();
 		IPageHlep pageHelp =  new PageHlepImpl();
 		Goods good = new Goods();

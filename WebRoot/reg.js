@@ -76,6 +76,16 @@ function check(){
         			form1.shopname.focus();
         			return false;
         		}
+        		if(form1.name.value==""){
+        			alert("店主姓名不能为空！");
+        			form1.name.focus();
+        			return false;
+        		}
+        		if(form1.id.value==""){
+        			alert("身份证号不能为空！");
+        			form1.id.focus();
+        			return false;
+        		}
         		if(form1.agree.value=="不同意"){
         			alert("请同意诚信经营承诺书！");
         			return false;

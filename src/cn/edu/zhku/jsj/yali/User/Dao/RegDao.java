@@ -21,7 +21,7 @@ public class RegDao {
 			throw new Exception("数据库连接不成功！");
 		}
 		
-		String sqlQuery = "insert into info(username, password,sex,phone,email,name,address) value(?,?,?,?,?,?,?)";
+		String sqlQuery = "insert into info(username, password,sex,phone,email,name,address,cate,shopname,id) value(?,?,?,?,?,?,?,?,?,?)";
 		
 		ps = conn.prepareStatement(sqlQuery);
 		
@@ -32,6 +32,9 @@ public class RegDao {
 		ps.setString(5, user.getEmail());
 		ps.setString(6, user.getName());
 		ps.setString(7, user.getAddress());
+		ps.setString(8, user.getCate());
+		ps.setString(9, user.getShopname());
+		ps.setString(10, user.getId());
 		
 		rs = ps.executeUpdate();
 		if(rs==1){

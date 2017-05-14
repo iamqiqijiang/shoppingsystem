@@ -1,7 +1,6 @@
-#Wed May 10 20:24:40 CST 2017
+#Sat May 13 14:26:46 CST 2017
 eclipse.preferences.version=1
+encoding//WebRoot/head.jsp=UTF-8
 encoding//WebRoot/reg.js=UTF-8
-encoding//src/cn/edu/zhku/jsj/yali/Goods/Ctrl/IPageHlep.java=UTF-8
-encoding//src/cn/edu/zhku/jsj/yali/Goods/Ctrl/PageHlepImpl.java=UTF-8
 encoding//src/cn/edu/zhku/jsj/yali/Goods/PageBean.java=UTF-8
 encoding//src/cn/edu/zhku/jsj/yali/Goods/Service/GoodFoundService.java=UTF-8

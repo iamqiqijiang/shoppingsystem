@@ -35,6 +35,20 @@
     <servlet-name>GoodFoundCtrl</servlet-name>
     <servlet-class>cn.edu.zhku.jsj.yali.Goods.Ctrl.GoodFoundCtrl</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.ShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackManagCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.BackManagCtrl</servlet-class>
+  </servlet>
+
+
 
   <servlet-mapping>
     <servlet-name>Faces Servlet</servlet-name>
@@ -43,5 +57,13 @@
   <servlet-mapping>
     <servlet-name>GoodFoundCtrl</servlet-name>
     <url-pattern>/servlet/GoodFoundCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopCtrl</servlet-name>
+    <url-pattern>/servlet/ShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackManagCtrl</servlet-name>
+    <url-pattern>/servlet/BackManagCtrl</url-pattern>
   </servlet-mapping>
 </web-app>

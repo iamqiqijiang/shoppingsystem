@@ -7,5 +7,12 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/mysql-5.0.20-win32-非安装版/mysql-connector-java-5.0.0-beta-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.75/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="C:/json包/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/json包/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/json包/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/json包/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/json包/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/json包/json-lib-2.4.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

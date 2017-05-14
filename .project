@@ -62,4 +62,11 @@
 		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
 		<nature>org.jboss.tools.jsf.jsfnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebRoot/images/shop3.png</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/shop3.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

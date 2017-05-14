@@ -40,6 +40,7 @@ public class RegCtrl extends HttpServlet {
 		String addressall =province+city+address;
 		String cate =(String) request.getParameter("cate");
 		String shopname =(String) request.getParameter("shopname");
+		String id =(String) request.getParameter("id");
 		
 		//打包处理，形成一个user对象，以便于后面传递参数使用
 		User user  = new User();
@@ -52,6 +53,7 @@ public class RegCtrl extends HttpServlet {
 		user.setAddress(addressall);
 		user.setCate(cate);
 		user.setShopname(shopname);
+		user.setId(id);
 		
 		boolean checkResult = false ;
 		String msg = null;
