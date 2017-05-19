@@ -16,23 +16,34 @@
 		.c{
 			background:#CD1076;
 		}
+		th{
+			width:6%;
+			align:center;
+		}
+		td{
+			width:6%;
+			text-align:center;
+		}
 	</style>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script language="JavaScript" type="text/javascript">
 		$(document).ready(function () {
 			  $.ajax({
 			    timeout: 3000,
 			    async: false,
 			    type: "POST",
-			    url: "servlet/BackManagCtrl",
-			    dataType: "json",
+			    url: "./servlet/BackManagCtrl",
+			    //dataType:"json",
 			    data: {
 			      catedata: $("#accshop").val(),
 			    },
 			    success: function (data) {
 				    $("#accshop").empty();
-					var d = eval('(' + data + ')');
+					//var d = eval("(" + data + ")");
+					var d =$.parseJSON(data);
+					console.info(data);
 			      	for (var i = 0; i < d.length; i++) {
-			       		var html = "<tr><td>" + d[i].goodname + "</td><td>" + d[i].price+ "</td><td>" + d[i].address + "</td><td>" + d[i].salesvolume + "</td><td>" + d[i].shop + "</td><td>" + d[i].num + "</td><td>" + d[i].category + "</td></tr>";
+			       		var html = "<tr><td>" + d[i].goodname + "</td><td>" + d[i].price+ "</td><td>" + d[i].address + "</td><td>" + d[i].salesvolume + "</td><td>" + d[i].num + "</td><td>" + d[i].category + "</td><td>" + "<a>修改</a>|<a>删除</a>" + "</td></tr>";
 						$("#accshop").append(html);
 			      }
 			    }
@@ -46,12 +57,11 @@
     	<font style="font-size:30px">店铺信息</font><br/>
     	店铺名：<br/>
     	掌柜：<br/>                  
-    	店铺等级：
+    	店铺等级：★★★★
     </div>
-    <a href="./servlet/BackManagCtrl">ggggg</a>
-    <h2>店铺商品管理</h2>
+    <h2 style="display:inline;">店铺商品管理</h2><input type="button" value="添加商品" style="position:absolute; left: 13%; top: 13.5%;">
     <div class="b">
-    	<table>
+  <table border="1">
     		<thead>
 		    	<tr>
 				   	<th>商品名</th>

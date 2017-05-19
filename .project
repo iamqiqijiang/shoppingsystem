@@ -64,6 +64,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>WebRoot/jquery.min.js</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Desktop/课件/jquery.min.js</location>
+		</link>
+		<link>
+			<name>WebRoot/images/goods.png</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/goods.png</location>
+		</link>
+		<link>
 			<name>WebRoot/images/shop3.png</name>
 			<type>1</type>
 			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/shop3.png</location>

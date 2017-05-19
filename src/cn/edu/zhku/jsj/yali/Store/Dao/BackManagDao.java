@@ -14,8 +14,7 @@ import cn.edu.zhku.jsj.yali.Util.ConnectionManager;
 public class BackManagDao {
 	public ArrayList<Goods> getshopinfo() throws Exception {
 		ArrayList<Goods> list = new ArrayList<Goods>();
-		Goods goods = new Goods();
-
+		
 		Connection conn = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -27,17 +26,20 @@ public class BackManagDao {
 			throw new Exception("数据库连接不成功！");
 		}
 
-		String sqlQuery = "Select* from goodlist";
-		Statement stmt=(Statement) conn.createStatement();
-		rs = stmt.executeQuery(sqlQuery);
+		String sqlQuery = "Select* from goodlist where num=?";
+		
+		PreparedStatement pstmt=conn.prepareStatement(sqlQuery);
+    	pstmt.setString(1,"10");
+    	rs =pstmt.executeQuery();
 		
 		while(rs.next()){
+			Goods goods = new Goods();
 			goods.setgoodname(rs.getString("goodname"));
-			goods.setPrice(rs.getInt("price"));
+			goods.setPrice((int) rs.getLong("price"));
 			goods.setAddress(rs.getString("address"));
-			goods.setSalesvolume(rs.getInt("salesvolume"));
+			goods.setSalesvolume((int) rs.getLong("salesvolume"));
 			goods.setShop(rs.getString("shop"));
-			goods.setNum(rs.getInt("num"));
+			goods.setNum((int) rs.getLong("num"));
 			goods.setCategory(rs.getString("category"));
 			list.add(goods);
 		}

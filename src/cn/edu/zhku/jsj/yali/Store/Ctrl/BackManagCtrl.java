@@ -20,16 +20,11 @@ public class BackManagCtrl extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setCharacterEncoding("UTF-8");
+		response.setHeader("content-type","text/html;charset=UTF-8");
+		request.setCharacterEncoding("UTF-8");
+		
 		PrintWriter out = null;
-		JSONArray list = null;
-		try {
-			list = bms.toJson();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		System.out.println(list);
-		System.out.println("asdasdasdasdas");
+		JSONArray list = bms.toJson();
 		out = response.getWriter();
 		out.write(list.toString());
 	}

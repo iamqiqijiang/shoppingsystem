@@ -12,10 +12,16 @@ public class BackManagService {
 		
 	BackManagDao bmd=new BackManagDao();
 	
-	public JSONArray toJson() throws Exception{
-		JSONArray jsonArray = new JSONArray();
-		ArrayList<Goods> list = bmd.getshopinfo();
-		jsonArray.add(list);
+	public JSONArray toJson() {
+		//JSONArray jsonArray = new JSONArray();
+		ArrayList<Goods> list = null;
+		try {
+			list = bmd.getshopinfo();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		JSONArray jsonArray =JSONArray.fromObject(list);
 		return jsonArray;
 		}
 }
