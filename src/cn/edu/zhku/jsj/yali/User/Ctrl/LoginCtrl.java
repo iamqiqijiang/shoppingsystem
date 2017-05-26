@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import cn.edu.zhku.jsj.yali.User.Service.LoginService;
 import cn.edu.zhku.jsj.yali.User.User;
@@ -33,15 +34,17 @@ public class LoginCtrl extends HttpServlet {
 		user.setUsername(userName);
 		user.setPassword(userPassword);
 		
-		boolean checkResult = false ;
 		String msg = null;
+		HttpSession session = request.getSession();
 		
 		RequestDispatcher rd = null;
 		try{
-			checkResult = ls.checkUserNameAndPassword(user);
-			
-			if(checkResult == true){
-				msg = "恭喜你，欢迎"+userName+"光临!";				
+			User user1 = ls.checkUserNameAndPassword(user);	
+			if(user1.getUsername() != null){
+				msg = "恭喜你，欢迎"+userName+"光临!";
+				session.setAttribute("loginusername",userName);
+				session.setAttribute("logincate",user1.getCate());
+				session.setAttribute("shopname",user1.getShopname());
 			}else{
 				msg = "对不起，用户名或者密码不正确";	
 				System.out.println(msg);

@@ -69,14 +69,79 @@
 			<location>C:/Users/Administrator/Desktop/课件/jquery.min.js</location>
 		</link>
 		<link>
+			<name>WebRoot/images/blue-prink.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/blue-prink.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/blue.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/blue.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/blueful.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/blueful.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/bluefuly.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/bluefuly.jpg</location>
+		</link>
+		<link>
 			<name>WebRoot/images/goods.png</name>
 			<type>1</type>
 			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/goods.png</location>
 		</link>
 		<link>
+			<name>WebRoot/images/green.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/green.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/off.png</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/off.png</location>
+		</link>
+		<link>
+			<name>WebRoot/images/on.png</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/on.png</location>
+		</link>
+		<link>
+			<name>WebRoot/images/prink-black.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/prink-black.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/prink.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/prink.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/prink2.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/prink2.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/prinkful.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/prinkful.jpg</location>
+		</link>
+		<link>
 			<name>WebRoot/images/shop3.png</name>
 			<type>1</type>
 			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/shop3.png</location>
+		</link>
+		<link>
+			<name>WebRoot/images/white-black.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/white-black.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/white.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/white.jpg</location>
 		</link>
 	</linkedResources>
 </projectDescription>

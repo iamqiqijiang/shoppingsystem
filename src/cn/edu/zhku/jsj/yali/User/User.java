@@ -11,8 +11,15 @@ public class User {
 	private String cate;
 	private String shopname;
 	private String id;
+	private String introduction;
 	
 	
+	public String getIntroduction() {
+		return introduction;
+	}
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
+	}
 	public String getId() {
 		return id;
 	}

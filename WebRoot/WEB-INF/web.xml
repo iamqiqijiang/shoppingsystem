@@ -53,6 +53,90 @@
     <servlet-name>SearchCtrl</servlet-name>
     <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.SearchCtrl</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CateSearchCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.CateSearchCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShopInfoCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.ShopInfoCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertInofCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.InsertInofCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertShopInfoCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.InsertShopInfoCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchInfoCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.SearchInfoCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.SearchShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertCateCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.InsertCateCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchCateShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.SearchCateShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.ModifyShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.DeleteShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyCateCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.ModifyCateCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleCateCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.DeleCateCtrl</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <servlet-mapping>
@@ -75,6 +159,54 @@
     <servlet-name>SearchCtrl</servlet-name>
     <url-pattern>/servlet/SearchCtrl</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CateSearchCtrl</servlet-name>
+    <url-pattern>/servlet/CateSearchCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopInfoCtrl</servlet-name>
+    <url-pattern>/servlet/ShopInfoCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertInofCtrl</servlet-name>
+    <url-pattern>/servlet/InsertInofCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertShopInfoCtrl</servlet-name>
+    <url-pattern>/servlet/InsertShopInfoCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchInfoCtrl</servlet-name>
+    <url-pattern>/servlet/SearchInfoCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchShopCtrl</servlet-name>
+    <url-pattern>/servlet/SearchShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertCateCtrl</servlet-name>
+    <url-pattern>/servlet/InsertCateCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchCateShopCtrl</servlet-name>
+    <url-pattern>/servlet/SearchCateShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyShopCtrl</servlet-name>
+    <url-pattern>/servlet/ModifyShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteShopCtrl</servlet-name>
+    <url-pattern>/servlet/DeleteShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyCateCtrl</servlet-name>
+    <url-pattern>/servlet/ModifyCateCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleCateCtrl</servlet-name>
+    <url-pattern>/servlet/DeleCateCtrl</url-pattern>
+  </servlet-mapping>
   
   <filter>  
         <filter-name>ShopkeeperFilter</filter-name>  
@@ -83,5 +215,6 @@
     <filter-mapping>  
         <filter-name>ShopkeeperFilter</filter-name>  
         <url-pattern>/shop.jsp</url-pattern>  
+        <url-pattern>/storectrl.jsp</url-pattern>  
     </filter-mapping>
 </web-app>

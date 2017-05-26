@@ -32,6 +32,9 @@ public class ShopDao {
 				goods.setPrice((int) rs.getLong("price"));
 				goods.setAddress(rs.getString("address"));
 				goods.setSalesvolume((int) rs.getLong("salesvolume"));
+				goods.setCategory(rs.getString("category"));
+				goods.setNum((int) rs.getLong("num"));
+				goods.setShop(rs.getString("shop"));
 				list.add(goods);
 			}
 			return list;

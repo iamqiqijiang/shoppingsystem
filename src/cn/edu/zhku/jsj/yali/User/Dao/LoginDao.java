@@ -22,7 +22,7 @@ public class LoginDao {
 			throw new Exception("数据库连接不成功！");
 		}
 
-		String sqlQuery = "Select username,password from info where username = ? && password = ?";
+		String sqlQuery = "Select username,password,cate,shopname from info where username = ? && password = ?";
 		
 		ps = conn.prepareStatement(sqlQuery);
 
@@ -36,8 +36,11 @@ public class LoginDao {
 		if (result == true) {
 			String userName = rs.getString("username");
 			String userPassword = rs.getString("password");
+			String cate = rs.getString("cate");
+			String shop = rs.getString("shopname");
 			newUser.setUsername(userName);
 			newUser.setPassword(userPassword);
+			newUser.setCate(shop);
 		}
 		return newUser;
 	}
