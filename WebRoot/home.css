@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+.all *{ padding:0; margin:0; list-style:none; border:0;}
+.all{ width: 585px; height: 285px;margin: 100px auto; position: relative;left:52px;top:-100px; }
+.screen{
+	width:585px;
+	height:285px;
+	 overflow:hidden; 
+	position:relative;
+}
+.screen li{ width:585px; height:285px; overflow:hidden; float:left;}
+.screen ul{ position:absolute; left:0; top:0px; width:3000px;}
+.all ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+.all ol li{ float: left; width: 15px; height: 15px; background: #fff;  margin-left: 5px; cursor: pointer; font-size: 10px; font-family: Verdana; line-height: 15px; border-radius: 15px; }
+.all ol li.current{ background:yellow;}
