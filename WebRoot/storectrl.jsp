@@ -38,6 +38,7 @@
 	<script src="jquery.min.js"></script>
 	<script type="text/javascript" src="storectrl.js" charset=UTF-8></script>
 	<script language="JavaScript" type="text/javascript">	
+	       //显示修改页面
 	       function triggera(){
 	            $.ajax({
 				    timeout: 3000,
@@ -58,7 +59,7 @@
 				    }
 			  });
 	         }
-	         
+	         //修改店铺信息按钮
 			function triggera1(){
 	            $.ajax({
 				    timeout: 3000,
@@ -78,14 +79,14 @@
 				    }
 			  });
 	         }
-	         
+	         //添加商品功能
 	         function triggerb1(){
 	         	$("#b").empty();
 	         	var shopname="${param.shoppname}";
 				var html = "<h2 align='center'>添加商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td><input type='text' id='goodname'></td><th>商品编号：</th><td><input type='text' id='id'></td></tr><tr><th>价格：</th><td><input type='text' id='price'></td><th>地址：</th><td><input type='text' id='address'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shopname+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num'></td><th>类别：</th><td><input type='text' id='cate'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='添加' onclick='triggerb11()' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
-	         
+	         //添加商品按钮
 	         function triggerb11(){
 	            $.ajax({
 				    timeout: 3000,
@@ -109,7 +110,7 @@
 				    }
 			  });
 	         }
-	         
+	         //显示商品信息功能
 	       function triggerb2(){
 	       		$.ajax({
 				    timeout: 3000,
@@ -132,13 +133,13 @@
 				 }
 			  });
 	       }
-	       
+	       //修改商品信息按钮，出现修改页面
 	       function triggerb21(goodname,price,address,salevol,shop,num,cate,id){
 	         	$("#b").empty();
 				var html = "<h2 align='center'>修改商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td><input type='text' id='goodname' readOnly='true' value='"+goodname+"'></td><th>商品编号：</th><td><input type='text' id='id' value='"+id+"'></td></tr><tr><th>价格：</th><td><input type='text' id='price' value='"+price+"'></td><th>地址：</th><td><input type='text' id='address' value='"+address+"'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true' value='"+salevol+"'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shop+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num' value='"+num+"'></td><th>类别：</th><td><input type='text' id='cate' value='"+cate+"'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='修改' onclick='triggerb211()' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
-	         
+	         //修改商品信息按钮
 	        function triggerb211(){
 	            $.ajax({
 				    timeout: 3000,
@@ -162,7 +163,7 @@
 				    }
 			  });
 	         }
-	         
+	         //删除商品信息信息按钮
 	          function triggerb22(goodname){
 	            $.ajax({
 				    timeout: 3000,
@@ -179,14 +180,14 @@
 				    }
 			  });
 	         }
-	         
+	         //添加宝贝分类功能
 	          function triggerc1(){
 	         	$("#b").empty();
 	         	var shopname="${param.shoppname}";
 				var html = "<h2 align='center'>添加宝贝分类</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td><input type='text' id='category'></td></tr><tr><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shopname+"'></td></tr><tr><td colspan='2' align='center'><input type='button' value='添加' onclick='triggerc11()' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
-	         
+	         //添加宝贝分类按钮
 	          function triggerc11(){
 	            $.ajax({
 				    timeout: 3000,
@@ -204,7 +205,7 @@
 				    }
 			  });
 	         }
-	         
+	         //显示宝贝分类信息功能
 	         function triggerc2(){
 	       		$.ajax({
 				    timeout: 3000,
@@ -227,14 +228,14 @@
 				 }
 			  });
 	       }
-	       
+	       //修改宝贝分类按钮，出现修改页面
 	       function triggerc21(cate){
 	         	$("#b").empty();
 	         	var shopname="${param.shoppname}";
 				var html = "<h2 align='center'>修改宝贝分类</h2><div align='center'><table border='1'><tr><th>分类名字：</th><td><input type='text' id='category' value='"+cate+"'></td></tr><tr><td colspan='2' align='center'><input type='button' value='修改' onclick='triggerc211(\""+shopname+"\",\""+cate+"\")' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
-	         
+	         //修改宝贝分类按钮
 	         function triggerc211(shopname,cate){
 	            $.ajax({
 				    timeout: 3000,
@@ -253,7 +254,7 @@
 				    }
 			  });
 	         }
-	         
+	         //删除宝贝分类按钮
 	          function triggerc22(cate){
 	            $.ajax({
 				    timeout: 3000,

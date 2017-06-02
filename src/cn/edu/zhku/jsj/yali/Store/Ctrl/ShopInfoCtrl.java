@@ -12,6 +12,7 @@ import cn.edu.zhku.jsj.yali.Store.Service.ShopInfoService;
 
 import net.sf.json.JSONArray;
 
+//后台修改店铺信息时显示店铺信息功能
 public class ShopInfoCtrl extends HttpServlet {
 
 	ShopInfoService sis=new ShopInfoService();

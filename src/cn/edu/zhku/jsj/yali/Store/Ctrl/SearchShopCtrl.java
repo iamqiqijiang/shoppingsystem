@@ -12,6 +12,8 @@ import cn.edu.zhku.jsj.yali.Store.Service.SearchShopService;
 
 import net.sf.json.JSONArray;
 
+
+//查询店铺内商品功能
 public class SearchShopCtrl extends HttpServlet {
 
 	SearchShopService sss=new SearchShopService();

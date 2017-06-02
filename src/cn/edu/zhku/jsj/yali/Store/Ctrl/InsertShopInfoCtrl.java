@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import cn.edu.zhku.jsj.yali.Goods.Goods;
 import cn.edu.zhku.jsj.yali.Store.Service.InsertShopInfoService;
 
+//后台管理添加商品功能
 public class InsertShopInfoCtrl extends HttpServlet {
 
 	InsertShopInfoService isis=new InsertShopInfoService();

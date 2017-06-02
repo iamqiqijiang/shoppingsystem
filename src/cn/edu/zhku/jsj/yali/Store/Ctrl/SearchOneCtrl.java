@@ -12,6 +12,7 @@ import cn.edu.zhku.jsj.yali.Store.Service.SearchOneService;
 
 import net.sf.json.JSONArray;
 
+//主页面模糊搜索功能
 public class SearchOneCtrl extends HttpServlet {
 
 	SearchOneService sos=new SearchOneService();

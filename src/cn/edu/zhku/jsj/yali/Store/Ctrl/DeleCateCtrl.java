@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import cn.edu.zhku.jsj.yali.Store.Service.DeleCateService;
 
+//后台删除宝贝分类
 public class DeleCateCtrl extends HttpServlet {
 
 	DeleCateService dcs=new DeleCateService();

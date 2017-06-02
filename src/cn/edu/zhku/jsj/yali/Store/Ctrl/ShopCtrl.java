@@ -12,6 +12,8 @@ import net.sf.json.JSONArray;
 
 import cn.edu.zhku.jsj.yali.Store.Service.ShopService;
 
+
+//跟SearchShopCtrl同样功能，重复了
 public class ShopCtrl extends HttpServlet {
 
 	ShopService ss=new ShopService();

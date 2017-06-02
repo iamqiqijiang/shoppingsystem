@@ -12,6 +12,7 @@ import cn.edu.zhku.jsj.yali.Store.Service.TwoCateSearchService;
 
 import net.sf.json.JSONArray;
 
+//主页面导航栏根据两个分类进行商品搜索
 public class TwoCateSearchCtrl extends HttpServlet {
 
 	TwoCateSearchService tcss=new TwoCateSearchService();

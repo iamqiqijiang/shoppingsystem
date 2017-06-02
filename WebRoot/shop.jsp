@@ -130,7 +130,7 @@
 			  });
 	         });
 	    });
-	    
+	    //导航栏搜索功能
 	    function triggera(cate){
 	    	$.ajax({
 				    timeout: 3000,
@@ -152,7 +152,7 @@
 				    }
 			  });
 	    }
-	    
+	    //返回首页功能
 	    function triggerstart(){
 	    	$.ajax({
 			    timeout: 3000,
