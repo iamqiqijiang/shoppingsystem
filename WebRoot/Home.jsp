@@ -58,7 +58,7 @@
 				var good=document.getElementById("search").value;
 				window.location.href="searchone.jsp?goodname="+good;
 			}
-			
+			//根据两个宝贝分类搜索商品
 			function catesearch(cate1,cate2){
 				$.ajax({
 				    timeout: 3000,
