@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.swing.JOptionPane;
 
 import cn.edu.zhku.jsj.yali.User.User;
@@ -54,28 +55,30 @@ public class RegCtrl extends HttpServlet {
 		user.setCate(cate);
 		user.setShopname(shopname);
 		user.setId(id);
+		user.setMoney(0);
 		
 		boolean checkResult = false ;
 		String msg = null;
 		
 		RequestDispatcher rd = null;
+		HttpSession session = request.getSession();
 		try{
 			checkResult =rs.insertinfo(user);
 			
 			if(checkResult == true){
-				msg = "注册成功!";				
+				session.setAttribute("loginusername",userName);
+				session.setAttribute("logincate",cate);
+				session.setAttribute("shopname",shopname);
+				JOptionPane.showMessageDialog(null, "注册成功！");
+				response.sendRedirect("/Shoppingsystem/Home.jsp");				
 			}else{
-				msg = "对不起，注册失败";	
-				System.out.println(msg);
+				JOptionPane.showMessageDialog(null, "对不起，注册失败！");
+				response.sendRedirect("/Shoppingsystem/reg.jsp");
 			}
 		}catch(Exception e){
 			e.printStackTrace();
 			
-		}finally{
-			rd = request.getRequestDispatcher("/result.jsp");
-			request.setAttribute("MSG", msg);
-			rd.forward(request, response);
-			}
+		}
 	}
 
 

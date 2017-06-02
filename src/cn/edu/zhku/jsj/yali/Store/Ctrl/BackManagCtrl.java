@@ -14,6 +14,8 @@ import net.sf.json.JSONArray;
 import cn.edu.zhku.jsj.yali.Goods.Goods;
 import cn.edu.zhku.jsj.yali.Store.Service.BackManagService;
 
+
+//没用，之前测试ajax的原型
 public class BackManagCtrl extends HttpServlet {
 
 	BackManagService bms=new BackManagService();

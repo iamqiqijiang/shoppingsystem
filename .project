@@ -69,6 +69,11 @@
 			<location>C:/Users/Administrator/Desktop/课件/jquery.min.js</location>
 		</link>
 		<link>
+			<name>WebRoot/images/55.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/55.jpg</location>
+		</link>
+		<link>
 			<name>WebRoot/images/blue-prink.jpg</name>
 			<type>1</type>
 			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/blue-prink.jpg</location>
@@ -132,6 +137,31 @@
 			<name>WebRoot/images/shop3.png</name>
 			<type>1</type>
 			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/shop3.png</location>
+		</link>
+		<link>
+			<name>WebRoot/images/timg.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/timg.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/timg1.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/timg1.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/timg2.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/timg2.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/timg3.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/timg3.jpg</location>
+		</link>
+		<link>
+			<name>WebRoot/images/timg4.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Workspaces/MyEclipse 10/Shoppingsystem/WebRoot/images/timg4.jpg</location>
 		</link>
 		<link>
 			<name>WebRoot/images/white-black.jpg</name>

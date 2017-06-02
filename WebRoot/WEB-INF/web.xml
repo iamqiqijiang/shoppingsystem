@@ -125,6 +125,69 @@
     <servlet-name>DeleCateCtrl</servlet-name>
     <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.DeleCateCtrl</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HomeCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.HomeCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchOneCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.SearchOneCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TwoCateSearchCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.Store.Ctrl.TwoCateSearchCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PersonalCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.PersonalCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyPassCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.ModifyPassCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RechargeCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.RechargeCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StartShopCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.StartShopCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackStageCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.BackStageCtrl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleUserCtrl</servlet-name>
+    <servlet-class>cn.edu.zhku.jsj.yali.User.Ctrl.DeleUserCtrl</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,6 +269,42 @@
   <servlet-mapping>
     <servlet-name>DeleCateCtrl</servlet-name>
     <url-pattern>/servlet/DeleCateCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HomeCtrl</servlet-name>
+    <url-pattern>/servlet/HomeCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchOneCtrl</servlet-name>
+    <url-pattern>/servlet/SearchOneCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TwoCateSearchCtrl</servlet-name>
+    <url-pattern>/servlet/TwoCateSearchCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PersonalCtrl</servlet-name>
+    <url-pattern>/servlet/PersonalCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPassCtrl</servlet-name>
+    <url-pattern>/servlet/ModifyPassCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RechargeCtrl</servlet-name>
+    <url-pattern>/servlet/RechargeCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StartShopCtrl</servlet-name>
+    <url-pattern>/servlet/StartShopCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStageCtrl</servlet-name>
+    <url-pattern>/servlet/BackStageCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleUserCtrl</servlet-name>
+    <url-pattern>/servlet/DeleUserCtrl</url-pattern>
   </servlet-mapping>
   
   <filter>  

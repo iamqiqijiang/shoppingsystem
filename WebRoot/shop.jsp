@@ -63,7 +63,6 @@
 		}
 	</style>
 	<script src="jquery.min.js"></script>
-
 	<script language="JavaScript" type="text/javascript">
 		$(document).ready(function () {
 			  $.ajax({
@@ -79,7 +78,7 @@
 				    $("#display").empty();
 					var d =$.parseJSON(data);
 			      	for (var i = 0; i < d.length; i++) {
-			       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].salesvolume+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'>&#8195;<input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></div>";
+			       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].salesvolume+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'></a>&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></a></div>";
 						$("#display").append(html);
 			      }
 			    }
@@ -124,7 +123,7 @@
 					    $("#display").empty();
 						var d =$.parseJSON(data);
 				      	for (var i = 0; i < d.length; i++) {
-				       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].num+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'>&#8195;<input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></div>";
+				       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].num+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'></a>&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></a></div>";
 							$("#display").append(html);
 				      }
 				    }
@@ -147,7 +146,7 @@
 					    $("#display").empty();
 						var d =$.parseJSON(data);
 				      	for (var i = 0; i < d.length; i++) {
-				       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].num+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'>&#8195;<input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></div>";
+				       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].num+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'></a>&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></a></div>";
 							$("#display").append(html);
 				      }
 				    }
@@ -168,12 +167,21 @@
 				    $("#display").empty();
 					var d =$.parseJSON(data);
 			      	for (var i = 0; i < d.length; i++) {
-			       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].salesvolume+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'>&#8195;<input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></div>";
+			       		var html = "<div class='d1'><img src='images/goods.png' style='width:100%;height:55%;'/>"+d[i].goodname+"<br/>"+d[i].price+"<br/>"+d[i].salesvolume+"已付款"+"<font style='float:right;'>"+d[i].address+"</font><br/>&#8195;&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='buy' value='购买' style='background:#F4A460;color:#EE4000;'></a>&#8195;<a href='${pageContext.request.contextPath}/BuyServlet?id="+d[i].id+"' onclick='return check();'><input type='button' name='cart' value='加入购物车' style='background:#EE7942;color:#FCFCFC;'></a></div>";
 						$("#display").append(html);
 			      }
 			    }
 			  });
 	    }
+	    
+	    function check(){
+				var user = "<%=session.getAttribute("logincate")%>";
+				if(user=="null"){
+					alert("请先登录您的账号，然后进行购买！");
+					return false;
+				}
+				return true;
+			}
 	</script>
 	
   </head>

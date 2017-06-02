@@ -9,7 +9,20 @@ public class Goods {
 	private String shop;               //店名
 	private int num;                   //数量
 	private String category;           //类别
+	private String id;
 	
+	public String getGoodname() {
+		return goodname;
+	}
+	public void setGoodname(String goodname) {
+		this.goodname = goodname;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public int getNum() {
 		return num;
 	}

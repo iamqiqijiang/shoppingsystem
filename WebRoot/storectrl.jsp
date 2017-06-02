@@ -82,7 +82,7 @@
 	         function triggerb1(){
 	         	$("#b").empty();
 	         	var shopname="${param.shoppname}";
-				var html = "<h2 align='center'>添加商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td colspan='3'><input type='text' id='goodname'></td></tr><tr><th>价格：</th><td><input type='text' id='price'></td><th>地址：</th><td><input type='text' id='address'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shopname+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num'></td><th>类别：</th><td><input type='text' id='cate'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='添加' onclick='triggerb11()' style='width:60px;'></td></tr></table></div>";
+				var html = "<h2 align='center'>添加商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td><input type='text' id='goodname'></td><th>商品编号：</th><td><input type='text' id='id'></td></tr><tr><th>价格：</th><td><input type='text' id='price'></td><th>地址：</th><td><input type='text' id='address'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shopname+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num'></td><th>类别：</th><td><input type='text' id='cate'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='添加' onclick='triggerb11()' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
 	         
@@ -96,6 +96,7 @@
 				    data: {
 				      goodname: $("#goodname").val(),
 				      address: $("#address").val(),
+				      id: $("#id").val(),
 				      price:$("#price").val(),
 				      salevol:$("#salevol").val(),
 				      num:$("#num").val(),
@@ -122,19 +123,19 @@
 				    success: function (data) {
 					  	$("#b").empty();
 						var d =$.parseJSON(data);
-						var html1="<h2 align='center'>商品信息</h2><table><tr><th width='220px'>商品名字</th><th width='120px'>价格</th><th width='100px'>地址</th><th width='50px'>销量</th><th width='160px'>店铺名</th><th width='50px'>库存量</th><th width='120px'>类别</th><th width='120px'>操作</th></tr></table>";
+						var html1="<h2 align='center'>商品信息</h2><table><tr><th width='160px'>商品名字</th><th width='80px'>商品编号</th><th width='100px'>价格</th><th width='100px'>地址</th><th width='50px'>销量</th><th width='160px'>店铺名</th><th width='50px'>库存量</th><th width='120px'>类别</th><th width='120px'>操作</th></tr></table>";
 						$("#b").append(html1);
 				      	for (var i = 0; i < d.length; i++) {
-				       		var html = "<table><tr><td width='220px' align='center'>"+d[i].goodname+"</td><td width='120px' align='center'>"+d[i].price+"</td><td width='100px' align='center'>"+d[i].address+"</td><td width='50px' align='center'>"+d[i].salesvolume+"</td><td width='160px' align='center'>"+d[i].shop+"</td><td width='50px' align='center'>"+d[i].num+"</td><td width='120px' align='center'>"+d[i].category+"</td><td width='120px' align='center'><a href='#' onclick='triggerb21(\""+d[i].goodname+"\",\""+d[i].price+"\",\""+d[i].address+"\",\""+d[i].salevol+"\",\""+d[i].shop+"\",\""+d[i].num+"\",\""+d[i].category+"\")'>修改</a>|<a href='#' onclick='triggerb22(\""+d[i].goodname+"\")'>删除</a></td></tr></table>";
+				       		var html = "<table><tr><td width='160px' align='center'>"+d[i].goodname+"</td><td width='80px' align='center'>"+d[i].id+"</td><td width='100px' align='center'>"+d[i].price+"</td><td width='100px' align='center'>"+d[i].address+"</td><td width='50px' align='center'>"+d[i].salesvolume+"</td><td width='160px' align='center'>"+d[i].shop+"</td><td width='50px' align='center'>"+d[i].num+"</td><td width='120px' align='center'>"+d[i].category+"</td><td width='120px' align='center'><a href='#' onclick='triggerb21(\""+d[i].goodname+"\",\""+d[i].price+"\",\""+d[i].address+"\",\""+d[i].salevol+"\",\""+d[i].shop+"\",\""+d[i].num+"\",\""+d[i].category+"\",\""+d[i].id+"\")'>修改</a>|<a href='#' onclick='triggerb22(\""+d[i].goodname+"\")'>删除</a></td></tr></table>";
 							$("#b").append(html);
 					    }
 				 }
 			  });
 	       }
 	       
-	       function triggerb21(goodname,price,address,salevol,shop,num,cate){
+	       function triggerb21(goodname,price,address,salevol,shop,num,cate,id){
 	         	$("#b").empty();
-				var html = "<h2 align='center'>修改商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td colspan='3'><input type='text' id='goodname' readOnly='true' value='"+goodname+"'></td></tr><tr><th>价格：</th><td><input type='text' id='price' value='"+price+"'></td><th>地址：</th><td><input type='text' id='address' value='"+address+"'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true' value='"+salevol+"'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shop+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num' value='"+num+"'></td><th>类别：</th><td><input type='text' id='cate' value='"+cate+"'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='添加' onclick='triggerb211()' style='width:60px;'></td></tr></table></div>";
+				var html = "<h2 align='center'>修改商品信息</h2><div align='center'><table border='1'><tr><th>商品名字：</th><td><input type='text' id='goodname' readOnly='true' value='"+goodname+"'></td><th>商品编号：</th><td><input type='text' id='id' value='"+id+"'></td></tr><tr><th>价格：</th><td><input type='text' id='price' value='"+price+"'></td><th>地址：</th><td><input type='text' id='address' value='"+address+"'></td></tr><tr><th>销量：</th><td><input type='text' id='salevol' value='0' readOnly='true' value='"+salevol+"'></td><th>店铺名：</th><td><input type='text' id='shop' readOnly='true' value='"+shop+"'></td></tr><tr><th>库存量：</th><td><input type='text' id='num' value='"+num+"'></td><th>类别：</th><td><input type='text' id='cate' value='"+cate+"'></td></tr><tr><td colspan='4' align='center'><input type='button' id='submit2' value='修改' onclick='triggerb211()' style='width:60px;'></td></tr></table></div>";
 				$("#b").append(html);
 	         }
 	         
@@ -148,6 +149,7 @@
 				    data: {
 				      goodname: $("#goodname").val(),
 				      price: $("#price").val(),
+				      id: $("#id").val(),
 				      address: $("#address").val(),
 				      salevol: $("#salevol").val(),
 				      shop: $("#shop").val(),
@@ -272,7 +274,7 @@
 	<%@ include file="Navigation.jsp" %>
   </head>
   
-  <body style="background-image: url(images/blueful.jpg);">
+  <body >
     <div class="a">
     	<font style="font-size:35px;color:#97FFFF;">店铺管理后台</font><br/>
     	<font style="color:#9400D3;">店铺名：</font><font style="color:#54FF9F;">${param.shoppname}</font>&nbsp;&nbsp;&nbsp; 

@@ -35,6 +35,7 @@ public class ShopDao {
 				goods.setCategory(rs.getString("category"));
 				goods.setNum((int) rs.getLong("num"));
 				goods.setShop(rs.getString("shop"));
+				goods.setId(rs.getString("id"));
 				list.add(goods);
 			}
 			return list;

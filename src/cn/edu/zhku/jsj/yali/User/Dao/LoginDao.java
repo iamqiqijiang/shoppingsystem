@@ -40,7 +40,8 @@ public class LoginDao {
 			String shop = rs.getString("shopname");
 			newUser.setUsername(userName);
 			newUser.setPassword(userPassword);
-			newUser.setCate(shop);
+			newUser.setCate(cate);
+			newUser.setShopname(shop);
 		}
 		return newUser;
 	}

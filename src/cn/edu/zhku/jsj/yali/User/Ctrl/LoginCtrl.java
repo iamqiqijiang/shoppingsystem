@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.swing.JOptionPane;
 
 import cn.edu.zhku.jsj.yali.User.Service.LoginService;
 import cn.edu.zhku.jsj.yali.User.User;
@@ -39,23 +40,25 @@ public class LoginCtrl extends HttpServlet {
 		
 		RequestDispatcher rd = null;
 		try{
-			User user1 = ls.checkUserNameAndPassword(user);	
-			if(user1.getUsername() != null){
-				msg = "恭喜你，欢迎"+userName+"光临!";
+			User user1 = ls.checkUserNameAndPassword(user);
+			if(user1.getCate().equals("管理员")){
 				session.setAttribute("loginusername",userName);
 				session.setAttribute("logincate",user1.getCate());
 				session.setAttribute("shopname",user1.getShopname());
+				JOptionPane.showMessageDialog(null, "管理员登录！");
+				response.sendRedirect("/Shoppingsystem/backstage.jsp");
+			}else if(user1.getUsername() != null){
+				session.setAttribute("loginusername",userName);
+				session.setAttribute("logincate",user1.getCate());
+				session.setAttribute("shopname",user1.getShopname());
+				JOptionPane.showMessageDialog(null, "登陆成功！");
+				response.sendRedirect("/Shoppingsystem/Home.jsp");
 			}else{
-				msg = "对不起，用户名或者密码不正确";	
-				System.out.println(msg);
+				JOptionPane.showMessageDialog(null, "对不起，用户名或密码不正确！");
+				response.sendRedirect("/Shoppingsystem/login.jsp");
 			}
 		}catch(Exception e){
 			e.printStackTrace();
-			
-		}finally{
-			rd = request.getRequestDispatcher("/result.jsp");
-			request.setAttribute("MSG", msg);
-			rd.forward(request, response);
 			
 		}
 	}

@@ -12,8 +12,15 @@ public class User {
 	private String shopname;
 	private String id;
 	private String introduction;
+	private int money;
 	
 	
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
 	public String getIntroduction() {
 		return introduction;
 	}

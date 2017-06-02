@@ -53,7 +53,6 @@ function check(){
     {    
         if(cates[i].checked)  
         {   
-        	alert(cates[i].value);
         	if(cates[i].value=="顾客"){
         		if(form1.name.value==""){
         			alert("收货人不能为空！");
